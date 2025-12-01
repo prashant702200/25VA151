@@ -1,0 +1,18 @@
+h1 {
+    background-color: aqua;
+    color: brown;
+    text-align: center;
+}
+ul{
+    background-color: rgb(47, 15, 15);
+}
+ul li{
+    background-color: aqua;
+    display: inline-block;
+    padding: 10px;
+}
+ul li:hover{
+    background-color: rgb(16, 199, 16);
+   color: white;
+}
+

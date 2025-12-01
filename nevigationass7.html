@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Navigation Example</title>
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: "Times New Roman", serif;
+      background: #ffffff;
+      color: #222;
+    }
+
+    
+    .frame {
+      width: 95%;
+      margin: 18px auto;
+      border: 2px solid #222;
+      background: #fff;
+      box-sizing: border-box;
+      padding-bottom: 22px;
+    }
+
+   
+    .header {
+      background: #d9d9d9;
+      padding: 14px 0;
+      text-align: center;
+      font-size: 20px;
+      letter-spacing: 0.3px;
+    }
+    .header .highlight {
+      color: #c62828; 
+      font-weight: 700;
+    }
+
+    
+    .nav-area {
+      padding: 16px 28px;
+    }
+
+    
+    .btn {
+      display: inline-block;
+      margin: 6px 6px;
+      padding: 6px 12px;
+      text-decoration: none;
+      font-size: 15px;
+      line-height: 1;
+      border-radius: 4px;
+      border: 1px solid rgba(0,0,0,0.18);
+      box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset;
+      transition: transform 0.12s ease, box-shadow 0.12s;
+    }
+
+   
+    .btn.blue {
+      background: #cfe9ff;
+      color: #213245;
+    }
+
+    
+    .btn.green {
+      background: #cdf5c9;
+      color: #29562a;
+    }
+
+    
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    }
+
+  
+    .row {
+      margin-top: 4px;
+    }
+
+    
+    @media (max-width: 480px) {
+      .header { font-size: 18px; padding: 12px 0; }
+      .btn { padding: 6px 10px; font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="frame">
+    <div class="header">
+      My <span class="highlight">Website</span> Navigation
+    </div>
+
+    <div class="nav-area">
+      <!-- first (blue) row -->
+      <div class="row">
+        <a class="btn blue" href="#">Home</a>
+        <a class="btn blue" href="#">About</a>
+        <a class="btn blue" href="#">Services</a>
+        <a class="btn blue" href="#">Contact</a>
+      </div>
+
+      <!-- second (green) row -->
+      <div class="row">
+        <a class="btn green" href="#">Dashboard</a>
+        <a class="btn green" href="#">Profile</a>
+        <a class="btn green" href="#">Messages</a>
+        <a class="btn green" href="#">Logout</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
